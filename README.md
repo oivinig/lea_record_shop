@@ -2,15 +2,21 @@
 
 A Lea Record Shop é uma loja de discos fictícia. O objetivo deste projeto é disponibilizar APiS que possibilitem a interação com o Catálogo de Discos da Loja, Cadastro de Clientes e Criação de Pedidos.
 
+---
+
 ## Stack do Projeto
 
     - node.js;
     - MySQL;
     - Docker.
 
+---
+
 ## Quick Start
 
 Para efetuar a execução deste projeto será necessário utilizar o [Docker](https://www.docker.com/get-started/) e o [Postman](https://www.postman.com/downloads/).
+
+---
 
 ### Passo 1
 
@@ -22,6 +28,8 @@ Efetuar o clone do repositório ou download do zip.
 
 Aguardar a instalação do projeto.
 
+---
+
 ### Passo 2
 
 Com o projeto instalado, acessar a pasta raiz do projeto via gerenciador de comandos.
@@ -31,12 +39,16 @@ Executar o comando:
 ```
 Aguardar a conclusão da criação do container.
 
+---
+
 ### Passo 3
 
 Quando o container concluir a instalação/criação do projeto, aparecerá a seguinte mensagem:
     > App listening on port 3000
 
 Essa mensagem significa que a aplicação está pronta para ser "chamada" via APIs.
+
+---
 
 ### Passo 4
 
