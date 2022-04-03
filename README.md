@@ -44,7 +44,8 @@ Aguardar a conclusão da criação do container.
 ### Passo 3
 
 Quando o container concluir a instalação/criação do projeto, aparecerá a seguinte mensagem:
-    > App listening on port 3000
+
+> App listening on port 3000
 
 Essa mensagem significa que a aplicação está pronta para ser "chamada" via APIs.
 
@@ -56,23 +57,23 @@ No aplicativo "Postman", efetuar a importação da [Collection](https://github.c
 
 Serão criadas as pastas com todas as APIs disponíveis do projeto, separadas por entidade:
 
-    - Catálogo:
-        - Incluir discos no catálogo;
-        - Remover discos do catálogo;
-        - Obter discos do catálogo;
-        - Obter discos do catálogo (Por Artista);
-        - Obter discos do catálogo (Por Título);
-        - Obter discos do catálogo (Por Ano);
-        - Obter discos do catálogo (Por Estilo Musical);
+- Catálogo:
+    - Incluir discos no catálogo;
+    - Remover discos do catálogo;
+    - Obter discos do catálogo;
+    - Obter discos do catálogo (Por Artista);
+    - Obter discos do catálogo (Por Título);
+    - Obter discos do catálogo (Por Ano);
+    - Obter discos do catálogo (Por Estilo Musical);
 
-    - Clientes:
-        - Incluir clientes;
-        - Obter clientes;
-        - Obter clientes (Por CPF);
-        - Alterar status de cliente (ativar/inativar cadastro);
-        
-    - Pedidos:
-        - Incluir pedido;
-        - Obter pedidos;
-        - Obter pedidos (Por Periodo);
-        - Obter pedidos (Por CPF).
+- Clientes:
+    - Incluir clientes;
+    - Obter clientes;
+    - Obter clientes (Por CPF);
+    - Alterar status de cliente (ativar/inativar cadastro);
+
+- Pedidos:
+    - Incluir pedido;
+    - Obter pedidos;
+    - Obter pedidos (Por Periodo);
+    - Obter pedidos (Por CPF).
