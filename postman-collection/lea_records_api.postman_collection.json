@@ -1,0 +1,533 @@
+{
+	"info": {
+		"_postman_id": "a9a912cc-94ef-4b17-9b35-c0a97cb353c1",
+		"name": "lea_records_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "catalogo",
+			"item": [
+				{
+					"name": "incluir-discos-catalogo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/discos/?tituloDisco=Evermore&artista=Taylor Swift&anoLancamento=2020&estiloMusical=Acoustic&quantidadeEstoque=1000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"discos",
+								""
+							],
+							"query": [
+								{
+									"key": "tituloDisco",
+									"value": "Evermore",
+									"description": "Nome do Disco"
+								},
+								{
+									"key": "artista",
+									"value": "Taylor Swift",
+									"description": "Artista do Disco"
+								},
+								{
+									"key": "anoLancamento",
+									"value": "2020",
+									"description": "Ano de Lançamento do Disco"
+								},
+								{
+									"key": "estiloMusical",
+									"value": "Acoustic",
+									"description": "Estilo Musical"
+								},
+								{
+									"key": "quantidadeEstoque",
+									"value": "1000",
+									"description": "Quantidade de Discos no Estoque"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remover-discos-catalogo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/discos/?idDiscos=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"discos",
+								""
+							],
+							"query": [
+								{
+									"key": "idDiscos",
+									"value": "1",
+									"description": "Código do Registro do Disco que será removido"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter-discos-catalogo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/discos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"discos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter-discos-por-artista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/discos/artista/?artista=Taylor Swift",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"discos",
+								"artista",
+								""
+							],
+							"query": [
+								{
+									"key": "artista",
+									"value": "Taylor Swift",
+									"description": "Nome do Artista para o Filtro"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter-discos-por-titulo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/discos/titulo/?titulo=Folklore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"discos",
+								"titulo",
+								""
+							],
+							"query": [
+								{
+									"key": "titulo",
+									"value": "Folklore",
+									"description": "Titulo do Disco para o Filtro"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter-discos-por-ano",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/discos/anoLancamento/?anoLancamento=2021",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"discos",
+								"anoLancamento",
+								""
+							],
+							"query": [
+								{
+									"key": "anoLancamento",
+									"value": "2021",
+									"description": "Ano de Lançamento do Disco para Filtro"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter-discos-por-estilo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/discos/estilo/?estilo=Alter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"discos",
+								"estilo",
+								""
+							],
+							"query": [
+								{
+									"key": "estilo",
+									"value": "Alter",
+									"description": "Estilo Musical para o Filtro"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "APIs do Catálogo de Discos."
+		},
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "incluir-clientes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/clientes/?cpfCliente=789562364585&nomeCompletoCliente=Taylor da Silva&dataNascimentoCliente=1989-12-13&emailCliente=taylor.silva@gmail.com&telefoneCliente=13123049840",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"clientes",
+								""
+							],
+							"query": [
+								{
+									"key": "cpfCliente",
+									"value": "789562364585",
+									"description": "CPF do Cliente"
+								},
+								{
+									"key": "nomeCompletoCliente",
+									"value": "Taylor da Silva",
+									"description": "Nome Completo do Cliente"
+								},
+								{
+									"key": "dataNascimentoCliente",
+									"value": "1989-12-13",
+									"description": "Data de Nascimento do Cliente no Padrão AAAA-MM-DD"
+								},
+								{
+									"key": "emailCliente",
+									"value": "taylor.silva@gmail.com",
+									"description": "Email do Cliente (Opcional)"
+								},
+								{
+									"key": "telefoneCliente",
+									"value": "13123049840",
+									"description": "Telefone do Cliente (Opcional)"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter-clientes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter-clientes-por-cpf",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/clientes/68233217417",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"clientes",
+								"68233217417"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar-status-cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"clienteAtivo\": true}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/clientes/68233217417",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"clientes",
+								"68233217417"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pedidos",
+			"item": [
+				{
+					"name": "incluir-pedido",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/pedidos?cpfCliente=30966090470&idDiscos=11&quantidadeProdutos=200",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"pedidos"
+							],
+							"query": [
+								{
+									"key": "cpfCliente",
+									"value": "30966090470",
+									"description": "CPF do Cliente"
+								},
+								{
+									"key": "idDiscos",
+									"value": "11",
+									"description": "Código do Disco que está sendo adquirido"
+								},
+								{
+									"key": "quantidadeProdutos",
+									"value": "200",
+									"description": "Quantidade de Discos que estão sendo adquiridos"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter-pedidos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter-pedidos-por-periodo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/pedidos/periodo/?dataInício=2022-04-02&dataFim=2022-04-02",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"pedidos",
+								"periodo",
+								""
+							],
+							"query": [
+								{
+									"key": "dataInício",
+									"value": "2022-04-02",
+									"description": "Data Inicial do Filtro, no padrão AAAA-MM-DD"
+								},
+								{
+									"key": "dataFim",
+									"value": "2022-04-02",
+									"description": "Data Final do Filtro, no padrão AAAA-MM-DD"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter-pedidos-por-cpf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/pedidos/cpf/?cpfCliente=30966090470",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"pedidos",
+								"cpf",
+								""
+							],
+							"query": [
+								{
+									"key": "cpfCliente",
+									"value": "30966090470"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
