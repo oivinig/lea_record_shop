@@ -9,14 +9,15 @@ A Lea Record Shop é uma loja de discos fictícia. O objetivo deste projeto é d
 
 ## Quick Start
 Para efetuar a execução deste projeto será necessário utilizar o [Docker](https://www.docker.com/get-started/) e o [Postman](https://www.postman.com/downloads/).
-Passo 1: 
+
+### Passo 1: 
     Efetuar o clone do repositório ou download do zip.
     ```git
     git clone https://github.com/oivinig/lea_record_shop.git
     ```
     Aguardar a instalação do projeto.
 
-Passo 2:
+### Passo 2:
     Com o projeto instalado, acessar a pasta raiz do projeto via gerenciador de comandos.
     Executar o comando:
     ```command
@@ -24,13 +25,13 @@ Passo 2:
     ```
     Aguardar a conclusão da criação do container.
 
-Passo 3:
+### Passo 3:
     Quando o container concluir a instalação/criação do projeto, aparecerá a seguinte mensagem:
     > App listening on port 3000
 
     Essa mensagem significa que a aplicação está pronta para ser "chamada" via APIs.
 
-Passo 4: 
+### Passo 4: 
     No aplicativo "Postman", efetuar a importação da [Collection](https://github.com/oivinig/lea_record_shop/blob/main/postman-collection/lea_records_api.postman_collection.json) do projeto.
     Serão criadas as pastas com todas as APIs disponíveis do projeto, separadas por entidade:
         - Catálogo:
