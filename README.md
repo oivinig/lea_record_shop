@@ -53,7 +53,9 @@ Essa mensagem significa que a aplicação está pronta para ser "chamada" via AP
 ### Passo 4
 
 No aplicativo "Postman", efetuar a importação da [Collection](https://github.com/oivinig/lea_record_shop/blob/main/postman-collection/lea_records_api.postman_collection.json) do projeto.
+
 Serão criadas as pastas com todas as APIs disponíveis do projeto, separadas por entidade:
+
     - Catálogo:
         - Incluir discos no catálogo;
         - Remover discos do catálogo;
@@ -62,11 +64,13 @@ Serão criadas as pastas com todas as APIs disponíveis do projeto, separadas po
         - Obter discos do catálogo (Por Título);
         - Obter discos do catálogo (Por Ano);
         - Obter discos do catálogo (Por Estilo Musical);
+
     - Clientes:
         - Incluir clientes;
         - Obter clientes;
         - Obter clientes (Por CPF);
         - Alterar status de cliente (ativar/inativar cadastro);
+        
     - Pedidos:
         - Incluir pedido;
         - Obter pedidos;
